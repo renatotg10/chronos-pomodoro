@@ -48,11 +48,10 @@ produtividade.
 ### Passos para executar
 
 1. Clone o repositório:
+
    ```bash
    git clone https://github.com/seu-usuario/chronos-pomodoro.git
    ```
-
-````
 
 2. Acesse a pasta do projeto:
 
@@ -86,13 +85,16 @@ produtividade.
 
 ## 💾 Persistência dos Dados
 
-Os dados do Pomodoro (como histórico de sessões e configurações) são armazenados no **Local Storage** do navegador, permitindo que as informações sejam mantidas mesmo após fechar o navegador ou recarregar a página.
+Os dados do Pomodoro (como histórico de sessões e configurações) são armazenados
+no **Local Storage** do navegador, permitindo que as informações sejam mantidas
+mesmo após fechar o navegador ou recarregar a página.
 
 ---
 
 ## 📚 Curso
 
-Este projeto foi desenvolvido durante o curso **React + NestJS** na plataforma Udemy, ministrado pelo professor **Luíz Otávio**.
+Este projeto foi desenvolvido durante o curso **React + NestJS** na plataforma
+Udemy, ministrado pelo professor **Luíz Otávio**.
 
 ---
 
@@ -110,7 +112,8 @@ Contribuições são bem-vindas! Para contribuir:
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo
+[LICENSE](LICENSE) para mais detalhes.
 
 ---
 
@@ -122,5 +125,5 @@ Caso tenha dúvidas, sugestões ou queira trocar ideias, entre em contato comigo
 
 ---
 
-Obrigado por visitar o projeto! Que ele te ajude a ser mais produtivo com o método Pomodoro. ⏳🍅
-````
+Obrigado por visitar o projeto! Que ele te ajude a ser mais produtivo com o
+método Pomodoro. ⏳🍅
