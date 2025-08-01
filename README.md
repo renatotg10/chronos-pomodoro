@@ -1,69 +1,126 @@
-# React + TypeScript + Vite
+# Chronos-Pomodoro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um sistema **Pomodoro** desenvolvido em **React 19** com backend em **NestJS**,
+voltado para o uso do método Pomodoro. O aplicativo armazena os dados localmente
+no navegador usando **Local Storage**, permitindo que o usuário controle seus
+períodos de foco e descanso sem necessidade de banco de dados externo.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🕒 O que é o Método Pomodoro?
 
-## Expanding the ESLint configuration
+O Método Pomodoro é uma técnica de gerenciamento de tempo que usa um
+temporizador para dividir o trabalho em intervalos, tradicionalmente de 25
+minutos, separados por pequenas pausas. Isso ajuda a melhorar a concentração e a
+produtividade.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Tecnologias Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Frontend:** React 19 (com TypeScript)
+- **Backend:** NestJS (Node.js)
+- **Build e Dev Server:** Vite
+- **Armazenamento:** Local Storage do navegador
+- **Lint e Formatação:** ESLint e Prettier
+- **Outras ferramentas:** SWC para compilação rápida, ESLint Plugins para React
+  Hooks e React Refresh
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 Estrutura do Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- `/src` – Código-fonte da aplicação React
+- `/public` – Arquivos estáticos (imagens, favicon, etc)
+- `index.html` – Página HTML base do React
+- `README.md` – Documentação do projeto
+- Configurações de TypeScript, ESLint, Prettier, Vite, etc.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## ⚙️ Como Rodar o Projeto
+
+### Pré-requisitos
+
+- Node.js (recomendo a versão 18+)
+- npm ou yarn instalado
+
+### Passos para executar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/chronos-pomodoro.git
+   ```
+
+````
+
+2. Acesse a pasta do projeto:
+
+   ```bash
+   cd chronos-pomodoro
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+
+5. Abra o navegador e acesse:
+
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## 💾 Persistência dos Dados
+
+Os dados do Pomodoro (como histórico de sessões e configurações) são armazenados no **Local Storage** do navegador, permitindo que as informações sejam mantidas mesmo após fechar o navegador ou recarregar a página.
+
+---
+
+## 📚 Curso
+
+Este projeto foi desenvolvido durante o curso **React + NestJS** na plataforma Udemy, ministrado pelo professor **Luíz Otávio**.
+
+---
+
+## 🤝 Como Contribuir
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Fork este repositório.
+2. Crie uma branch com sua feature: `git checkout -b minha-feature`
+3. Faça commits das suas alterações: `git commit -m 'Minha feature'`
+4. Envie para sua branch remota: `git push origin minha-feature`
+5. Abra um Pull Request neste repositório.
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+## 📞 Contato
+
+Caso tenha dúvidas, sugestões ou queira trocar ideias, entre em contato comigo:
+
+📧 **[renatotg10@gmail.com](mailto:renatotg10@gmail.com)**
+
+---
+
+Obrigado por visitar o projeto! Que ele te ajude a ser mais produtivo com o método Pomodoro. ⏳🍅
+````
